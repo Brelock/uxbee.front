@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UXBee</title>
+    <!--  -->
+    @@include('templateHtml/head.html')
+    <!--  -->
+  </head>
+
+  <body>
+    @@include('templateHtml/modal.html') 
+
+    <div class="mainWrapper">
+      <div class="contentWrapper">
+        <!--  -->
+        @@include('templateHtml/header.html', { "home": "active" })
+        <!--  -->
+        <div id="homePage" class="homePage page">
+          <div class="page-container">
+            <div class="mcontainer">
+
+              <div class="top-section-expertise">
+                <div class="visibility--check visible-viewportchecker hidden">
+                  <div class="page-container__subtitle">UI/UX for web & mobile products</div>
+                  <h1 class="page-container__title">Smart design for <br><span class="span-text">successful business</span></h1>
+                </div>
+
+                <div class="video-section">
+                  <div class="page-container__banner-top modal-custom-open-btn visibility--check visible-viewportchecker hidden">
+                    <div class="page-container__banner-top-video-btn"></div>
+                    <div class="video-container-wrap">
+                      <video autoplay muted playsinline loop class="video-banner" id="video" onloadedmetadata="this.muted = true" width="100%" height="100%">
+                          <source type="video/mp4" autoplay="" src="/img/production.mp4"> 
+                          <source type="video/webm" autoplay="" src="/img/production.webm"> 
+                      </video>
+                    </div>                        
+                  </div>
+                  <div class="mobile-player iframe-container">
+                    <div id="player"></div>
+                  </div> 
+                </div>
+
+                <div class="page-container__expertise">
+                  <div class="page-container__expertise-title visibility--check visible-viewportchecker hidden">Expertise</div>
+                  <div class="page-container__expertise-contant flex visibility--check visible-viewportchecker hidden">
+                    <div class="expertise-contant__text">
+                      <p> We create human-centered UI/UX solutions for B2B, 
+                        B2C and C2C products across all the platforms.</p>
+                    </div>
+                    <div class="expertise-contant__list">
+                      <ul>
+                        <li class="expertise-contant__item-prod">
+                          <p class="expertise-contant__item-prod-title">Product strategy</p>
+                          <div class="expertise-contant__drop-text">
+                            
+                            <div> <p>
+                              We start each new digital product design partnership with an in‑depth discovery 
+                              phase to immerse ourselves in your business. Our UX designers interview stakeholders, 
+                              conduct user researc, analyze your competition, and consolidate content.The result
+                               is an action plan on executing a holistic brand and user experience.
+                            </p> </div>
+
+                          </div>
+                        </li>
+                        <li class="expertise-contant__item-prod">
+                          <p class="expertise-contant__item-prod-title">User experience design</p>
+                          <div class="expertise-contant__drop-text">
+                            <div><p>UI/UX design is a defining factor for any digital product these days.
+                               We're a user experience and UI design agency focused on improving conversion 
+                               and increasing customer engagement. Our UI/UX design capabilities don't stop 
+                               at mobile apps, web applications, or multi‑platform digital experiences.As a 
+                               UX design agency, we create products and services that provide 
+                              outstanding usability while fully embracing your brand's personality.</p></div>
+                          </div>
+                        </li>
+                        <li class="expertise-contant__item-prod">
+                          <p class="expertise-contant__item-prod-title">User interface design</p>
+                          <div class="expertise-contant__drop-text">
+                          <div><p>Our full‑stack design and development agency based in San Francisco
+                               provides front‑end and back‑end development services working closely 
+                               with our designers. As a UX UI and app development company, we build 
+                               native mobile apps for iOS andAndroid, 
+                              web applications, apps for wearables, andB2B/enterprise software.</p></div>
+                          </div>
+                        </li>
+                        <li class="expertise-contant__item-prod">
+                          <p class="expertise-contant__item-prod-title">Development</p>
+                          <div class="expertise-contant__drop-text">
+                          <div> <p>We're a web design agency creating next‑levelwebsites by 
+                              strategically blending user experienceand brand storytelling. 
+                              Our web designers anddevelopers create responsive websites that 
+                              feel athome on any device. Product landing pages,marketing sites, 
+                              or UX UI for company intranetportals – we do it all.</p></div> 
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="recent-work">
+                <div class="recent-work__title visibility--check visible-viewportchecker hidden">Recent work</div>
+                <div class="recent-work-wrap">
+
+                  <div class="recent-work__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="recent-work__banner">
+                      <img src="./img/recent-work-banner1.png" alt="">
+                    </div>
+                    <div class="recent-work__item-content">
+                      <h3>Actioned - task manager</h3>
+                      <p>Mobile app / web app</p>
+                    </div>
+                  </div>
+
+                  <div class="recent-work__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden"> 
+                    <div class="recent-work__banner">
+                      <img src="./img/recent-work-banner2.png" alt="">
+                    </div>
+                    <div class="recent-work__item-content">
+                      <h3>Muscle - e-commerce</h3>
+                      <p>Web / responsive</p>
+                    </div>
+                  </div>
+
+                  <div class="recent-work__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="recent-work__banner">
+                      <img src="./img/recent-work-banner3.png" alt="">
+                    </div>
+                    <div class="recent-work__item-content">
+                      <h3>SpiceX - dating</h3>
+                      <p>Mobile app</p>
+                    </div>
+                  </div>
+
+                  <div class="recent-work__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="recent-work__banner">
+                      <img src="./img/recent-work-banner4.png" alt="">
+                    </div>
+                    <div class="recent-work__item-content">
+                      <h3>View Retreats - travel agency</h3>
+                      <p>Mobile app / web app</p>
+                    </div>
+                  </div>
+
+                  <div class="recent-work__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="recent-work__banner">
+                      <img src="./img/recent-work-banner5.png" alt="">
+                    </div>
+                    <div class="recent-work__item-content">
+                      <h3>Amazeowl - online store</h3>
+                      <p>Web app</p>
+                    </div>
+                  </div>
+
+                  <div class="recent-work__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="recent-work__banner">
+                      <img src="./img/recent-work-banner6.png" alt="">
+                    </div>
+                    <div class="recent-work__item-content">
+                      <h3>Pikkop - delivery service</h3>
+                      <p>Mobile app / web app</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="process-section">
+                <div class="process-section__suptitle visibility--check visible-viewportchecker hidden">Process</div>
+                <div class="process-section__title visibility--check visible-viewportchecker hidden">How we make it</div>
+
+                <div class="process-section-wrap">
+
+                  <div class="process-section__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="process-section__item-icon">
+                      <img src="./img/process-icon1.svg" alt="">
+                    </div>
+                    <div class="process-section__item-title">1. Research & Discovery</div>
+                    <div class="process-section__item-text">We start with an in-depth 
+                      analysis of your business to discover business goals, user needs 
+                      and pain points, define key use cases, industry best practices and 
+                      possible UX solutions.</div>
+                  </div>
+
+                  <div class="process-section__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="process-section__item-icon">
+                      <img src="./img/process-icon2.svg" alt="">
+                    </div>
+                    <div class="process-section__item-title">2. Product architecture</div>
+                    <div class="process-section__item-text">Once we get a clear vision 
+                      of your future product, we build a detailed mind map to show the 
+                      entire product functional structure in a clear and simple way.</div>
+                  </div>
+
+                  <div class="process-section__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="process-section__item-icon">
+                      <img src="./img/process-icon3.svg" alt="">
+                    </div>
+                    <div class="process-section__item-title">3. Wireframing</div>
+                    <div class="process-section__item-text">According to the mind
+                       map we create a wireframe to figure the information architecture
+                        and get a primary vision of the key functional sections layout.</div>
+                  </div>
+
+                  <div class="process-section__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="process-section__item-icon">
+                      <img src="./img/process-icon4.svg" alt="">
+                    </div>
+                    <div class="process-section__item-title">4. UX Prototyping</div>
+                    <div class="process-section__item-text">We build a detailed 
+                      clickable prototype to test the real User experience before
+                       even starting the graphic design.</div>
+                  </div>
+
+                  <div class="process-section__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="process-section__item-icon">
+                      <img src="./img/process-icon5.svg" alt="">
+                    </div>
+                    <div class="process-section__item-title">5. UI/UX Audit</div>
+                    <div class="process-section__item-text">Our UX engineers and
+                       UI experts test and report the most impacting UI/UX issues
+                        and provide solutions to build consistent user experience, 
+                        increase conversion and reduce maintenance.</div>
+                  </div>
+                  
+                  <div class="process-section__item mcol-xs-12 mcol-sm-6 visibility--check visible-viewportchecker hidden">
+                    <div class="process-section__item-icon">
+                      <img src="./img/process-icon6.svg" alt="">
+                    </div>
+                    <div class="process-section__item-title">6. UI Graphic design</div>
+                    <div class="process-section__item-text">According to the prototype 
+                      we create the UI graphics. We work out the color scheme and 
+                      typography to create the hi end UI according to the latest 
+                      guidelines.</div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
+      <!--  -->
+     
+     
+      <!--  -->
+      @@include('templateHtml/footer.html') 
+      <!--  -->
+    </div>
+    <div class="black-line"></div>
+    <!--  -->
+    @@include('templateHtml/scripts.html')
+  </body>
+</html>

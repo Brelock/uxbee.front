@@ -1,0 +1,88 @@
+header.mainHeader {
+	background-color: $headerColor;
+	position: fixed;
+	z-index: 100;
+	display: block;
+	width: 100%;
+	height: 15vw;
+	min-height: 55px;
+	border-bottom: 1px solid #ccc;
+	transition: all .3s ease-out;
+	@media (min-width: $containerWidthSmaller) {
+		height: 10vw;
+	}
+	@media (min-width: $containerWidth) {
+		height: 8vw;
+	}
+	@media (min-width: $containerWidthTablet) {
+		height: auto;
+		border: none;
+	}
+}
+.header-wrap{
+	.mcontainer{
+		padding-right: 2vw;
+		padding-left: 6vw;
+		@media (min-width: $containerWidth) {
+			padding-left: 4vw;
+		}
+	
+	}
+}
+
+header .header-wrap{
+	.mcontainer{
+		@media (min-width: $containerWidthTablet) {
+			padding-left: 4vw;
+			padding-right: 4vw;
+		}
+		
+	}
+}
+
+
+
+.header-logo{
+	max-width: 97px;
+	min-width: 70px;
+	
+	.logotype{
+		width: auto;
+		height: 7vw;
+		max-width: none;
+		@media (min-width: $containerWidthSmaller) {
+			height: 5vw;
+		}
+		@media (min-width: $containerWidth) {
+			height: 3.5vw;
+		}
+		@media (min-width: $containerWidthLaptop) {
+			width: 114px;
+			height: auto;
+		}
+	}
+}
+	
+.header-block{
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 4vw 0;
+	@media (min-width: $containerWidthSmaller) {
+		padding: 3vw 0;
+	}
+	@media (min-width: $containerWidth) {
+		padding: 2.2vw 0;
+	}
+}
+
+.header-wrap .header-block{
+	@media (min-width: $containerWidthDesktop) {
+		padding: 19px 0;
+	}
+}
+
+.sticky_header-hidden {
+	transition: all .3s ease-out;
+  transform: translateY(-100%);
+}
+  

@@ -1,0 +1,158 @@
+body {
+	font-size: $pageFontSize;
+	font-family: $mainFont;
+	color: $mainFontColor;
+	position: relative;
+	margin: 0em;
+	box-sizing: border-box;
+	// background-color: #000;
+}
+*{
+	box-sizing: border-box;
+}
+
+body.js_pageOverlayOpen {	overflow: hidden;}
+
+// ---- mainWrapper -----
+div.mainWrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	& > div.contentWrapper {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+
+		& > .page {flex-grow: 1;}
+	}
+	& > footer.mainFooter {
+		flex: 0 0 auto;
+	}
+}
+.mainWrapper {
+	// max-width: $pageMaxWidth;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+// ---- end mainWrapper --
+.page {
+	background-color: $mainBackgroundColor;
+	.page-container {position: relative;}
+}
+
+.pageSection,
+.mcontainer {
+	background-color: inherit;
+}
+
+.js_hidden {
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	height: 0!important;
+	padding: 0 !important;
+	z-index: -100;
+}
+
+.slick-slide, .slick-slide:focus {outline: none;}
+.shadow {box-shadow: 0 1px 2px 0 #E3E3E3;}
+.bordered {border: 1px solid $borderColor;}
+.rounded {border-radius: 5px;}
+.alert {color: red;}
+
+// ---------Position--------
+.relative {position: relative;}
+// =========Buttons, inputs, links======
+button.active {background-color: $primaryColor};
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+button:active,
+button:focus,
+a:focus {
+	outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+}
+input,
+textarea,
+select {
+	box-sizing: border-box;
+	width: 100%;
+	color: $white;
+	font-size: 15px;
+	background-color: #000 !important;
+}
+input:-internal-autofill-selected{
+	background-color: #000 !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+//   border: 1px solid #000;
+font-size: 24px ;
+-webkit-text-fill-color: #666;
+-webkit-box-shadow: 0 0 0px 1000px #000 inset;
+transition: background-color 5000s ease-in-out 0s;
+}
+@-webkit-keyframes autofill {
+	to {
+	  color: inherit;
+	  background: transparent;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+
+textarea {
+	padding: 10px 12px;
+}
+a {
+	text-decoration: none;
+	color: $linksColor;
+}
+a.underline {
+	text-decoration: underline;
+	&:hover {text-decoration: none;}
+}
+a.standard {
+	&:hover {text-decoration: underline;}
+}
+
+
+/* ======Media Queries===== */
+
+@media (min-width: 991px) {
+
+}
+
+
+@media (min-width: 1279px) {
+
+}
+
+input:selected {
+    appearance: menulist-button;
+	background-color: #000 !important;
+    background-image: none !important;
+    color: $white !important;
+}
